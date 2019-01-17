@@ -2,23 +2,25 @@ package com.example.menurestaurante
 
 import com.example.oscar.myfirstapp.MenuOrder
 
-class MenuOrderImp(override val menuOrder: ArrayList<String>) : MenuOrder {
+class MenuOrderImp: MenuOrder {
+
+    override var menuOrder = ArrayList<String>()
+    get() = field
+
     override fun clear() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        this.menuOrder.clear()
     }
 
-    //get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-
     override fun add(element: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        this.menuOrder.add(element)
     }
 
     override fun del(elementIndex: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        this.menuOrder.removeAt(elementIndex)
     }
 
     override fun done() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        this.clear()
     }
 
 }
