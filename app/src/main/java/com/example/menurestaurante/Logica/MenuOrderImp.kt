@@ -1,11 +1,9 @@
-package com.example.menurestaurante
+package com.example.menurestaurante.Logica
 
-import com.example.oscar.myfirstapp.MenuOrder
 
 class MenuOrderImp: MenuOrder {
 
-    override var menuOrder = ArrayList<String>()
-    get() = field
+    override val menuOrder = ArrayList<String>()
 
     override fun clear() {
         this.menuOrder.clear()
@@ -20,7 +18,7 @@ class MenuOrderImp: MenuOrder {
     }
 
     override fun done() {
-        this.clear()
+        this.menuOrder.clear()
     }
 
 }

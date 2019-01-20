@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val BotonMenu = findViewById<Button>(R.id.BotonMenu)
-        BotonMenu.setOnClickListener{val intent = Intent(this,Menu::class.java)
+        val botonMenu = findViewById<Button>(R.id.BotonMenu)
+        botonMenu.setOnClickListener{val intent = Intent(this,Menu::class.java)
         startActivity(intent)}
 
-        val BotonPedido =findViewById<Button>(R.id.BotonPedido)
-        BotonPedido.setOnClickListener{val intent = Intent(this,Pedido::class.java)
-        startActivity(intent)}
+        val botonPedido =findViewById<Button>(R.id.BotonPedido)
+        botonPedido.setOnClickListener{val intent2 = Intent(this, Pedido::class.java)
+        startActivity(intent2)}
     }
 }

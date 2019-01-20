@@ -1,4 +1,4 @@
-package com.example.oscar.myfirstapp
+package com.example.menurestaurante.Logica
 
 interface MenuOrder {
 
